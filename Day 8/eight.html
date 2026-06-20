@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user ={
+            name:"Shubham Vishwakarma",
+            course:"BDC",
+            address:{
+                city:"Gorakhpur",
+                state:"Uttar Pradesh",
+                pincode:273209
+            },
+            roll:2514018590079,
+            semester:"5th"
+        }
+        console.log(user);
+
+
+        let user1=user;
+        //it is passing the reference
+        user1.name="Aman Kushwaha";
+        console.log(user);
+        console.log(user1);
+        
+        //Shallow Copy.
+        let user2={
+            ...user
+        };
+
+        console.log(user2);
+
+        //problem in shallow copy.
+        //inner object or array will pass reference only.
+
+        //Deep Copy.
+
+        let temp =JSON.stringify(user);
+        console.log(temp);
+        let user3=JSON.parse(temp);
+        console.log(user3);
+        user.name="Shubham";
+        user.address.city="Mumbai";
+        console.log(user);
+        console.log(user3);
+
+        let user4=structuredClone(user);
+        user.name="Shubham Vishwakarma";
+        user.address.city="Banglore";
+        console.log(user);
+        console.log(user4);
+
+        //Alias Destructing.
+        const {name:fullName}=user;
+
+        //Default Value Destructing.
+        const{attendence=false}=user;
+
+        let fees = {
+            total:3000,
+            paid:500,
+            dues:2500
+        };
+        let student = {
+            ...fees,
+            ...user
+        };
+        console.log(student);
+        console.log(student);
+        //Safe Access of Objects
+        console.log(student?.address?.city);
+    </script>
+</body>
+</html>

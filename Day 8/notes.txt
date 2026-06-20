@@ -1,0 +1,36 @@
+//Deep Copy.
+
+        let temp =JSON.stringify(user);
+        console.log(temp);
+
+        //it is passing the reference
+        let user1=user;
+        user1.name="Aman Kushwaha";
+        console.log(user);
+        console.log(user1);
+        
+        //Shallow Copy.
+        let user2={
+            ...user
+        };
+
+         //Alias Destructing.
+        const {name:fullName}=user;
+
+        //Default Value Destructing.
+        const{attendence=false}=user;
+
+         let fees = {
+            total:3000,
+            paid:500,
+            dues:2500
+        };
+        let student = {
+            ...fees,
+            ...user
+        };
+        console.log(student);
+        console.log(student);
+
+        //Safe Access of Objects
+        console.log(student?.address?.city);

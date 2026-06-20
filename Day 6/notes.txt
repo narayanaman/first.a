@@ -1,0 +1,19 @@
+Have to learn    Variable.
+
+
+let => which is block level variable.
+const => which can declear only one time not any again  more time.
+
+
+var => which is globel variable.
+
+we hosting with help of var variable.
+
+like this =>
+
+console.log(a);
+a=11;
+console.log(a);
+var a;
+
+

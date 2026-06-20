@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(...a){   //...a yah rest operator jab ham array ko combine karke ek me rakhte hain.
+                                // but b=[...a] ager mai array se todke tukde me jayega to spread operator.. 
+            console.log(a);
+        }
+
+        let b=[11,22,33,44,55];
+        console.log(b);
+        console.log(...b);
+        let c=b;
+        c=[...b];//shallow copy
+        console.log(c);
+        abc(22);
+        abc(11,22);
+        abc(11,22,33);
+    </script>
+</body>
+</html>

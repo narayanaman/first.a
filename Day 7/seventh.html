@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh - page</title>
+</head>
+<body>
+    <script>
+        let a=[1,2];
+        let b=[3,4];
+
+        // let c=a.concat(b);
+        //  rest operator like this c=[...a,...b];
+        let c=[...a,...b];  //  rest  operator 
+        console.log(c);
+        // if i use d=c that is called call by reference..
+        let d=[...c];    // call by value
+        console.log(d);
+        d[3]="Raghav";
+        d[0]="Ram";
+        console.log(d);
+        console.log(c);
+        
+        
+
+    </script>
+</body>
+</html>

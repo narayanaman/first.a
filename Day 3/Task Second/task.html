@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <table border="1">
+                <tr>
+                    <th colspan="8" align="left" >Change Personal Details</th>
+                    </tr>
+                    <tr>
+                        <td><label for="initator">Initator</label></td>
+                        <td><input type="text" name="initator" id="initator" placeholder="Enetr Initator Name"></td>
+                        <td colspan="1"></td>
+                        <td><label for="fid">Form ID</label></td>
+                        <td><input type="number" name="fid" id="fid" placeholder="Enter Form ID"></td>
+                        <td colspan="1"></td>
+                        <td><label for="rdate">Request Date</label></td>
+                        <td><input type="date" name="rdate" id="rdate"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="8" id="cpd"><label for="">Orgnizational Information</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="oid">Organization ID</label></td>
+                        <td><input type="number" name="oid" id="oid" placeholder="Enter organization ID"></td>
+                        <td colspan="3"></td>
+                        <td><label for="orn">Organization Name</label></td>
+                        <td><input type="text" name="orn" id="orn" placeholder="Enter Organization Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="oAbb">Org Abbreviation</label></td>
+                        <td><input type="text" name="oAbb" id="oAbb" placeholder="Org Abbreviation"></td>
+                    </tr>
+
+                     <tr>
+                        <td colspan="8" id="cpd"><label for="" id="oi">Position Information</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="job">Job</label></td>
+                        <td><input type="text" name="job" id="job" placeholder="Enter Post"></td>
+                        <td colspan="3"></td>
+                        <td><label for="pid">Position ID</label></td>
+                        <td><input type="number" name="pid" id="pid" placeholder="Enter Position ID"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pName">Position Name</label></td>
+                            <td><input type="text" name="pName" id="pName" placeholder="Enter Position Name"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" id="cpd">Employee Information</td>
+                        </tr>
+                        <tr>
+                            <td><label for="parea">Personal Area</label></td>
+                            <td><input type="text" name="parea" id="parea" placeholder="Enter Personal Area"></td>
+                            <td colspan="3"></td>
+                            <td><label for="PSA">Personal Sub Area</label></td>
+                            <td><input type="text" name="PSA" id="PSA" placeholder="Enetr Personal Sub Area"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="egroup">Employee Group</label></td>
+                            <td><input type="text" name="egroup" id="egroup" placeholder="Enter Employee Group"></td>
+                            <td colspan="3"></td>
+                            <td><label for="ESG">Employee Sub Group</label></td>
+                            <td><input type="text" name="ESG" id="ESG" placeholder="Enter Employee Sub Group"></td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="8" id="cpd">
+                                <label for="RMS">Requesting Manager Section</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="effective date">Effective date</label></td>
+                            <td><input type="date" name="effective date" id="effective date"></td>
+                            <td colspan="3"></td>
+                            <td><label for="AReason">Action Reason</label></td>
+                            <td><input type="text" name="AReason" id="AReason" placeholder="Action Reason"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" id="cpd">Employee Personal Details</td>
+                        </tr>
+                        <tr>
+                            <td><label for="title">Title</label></td>
+                            <td>
+                                <select name="title" id="title">
+                                    <option value="Select title">Select title</option>
+                                    <option value="MR.">MR.</option>
+                                    <option value="Miss">Miss</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="name">First Name</label></td>
+                            <td><input type="text" name="name" id="name" placeholder="First Name"></td>
+                            <td colspan="2"></td>
+                            <td><label for="Mname">Middle Name</label></td>
+                            <td><input type="text" name="Mname" id="Mname" placeholder="Middle Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Lname">Last Name</label></td>
+                            <td><input type="text" name="Lname" id="Lanme" placeholder="Last Name"></td>
+                            <td colspan="2"></td>
+                            <td><label for="irillas">irillas</label></td>
+                            <td><input type="text" name="irillas" id="irillas" placeholder="irillas"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label for="gender">Gender</label></td>
+                            <td>
+                                <select name="gender" id="gender">
+                                    <option value="">Choose Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </td>
+                            <td colspan="2"></td>
+                            <td><label for="dob">Date of Birth</label></td>
+                            <td><input type="date" name="dob" id="dob"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" id="cpd"><label for="comments">Comments</label></td>
+                        </tr>
+                        <tr>
+                             <td>
+                                <textarea name="comments" id="comments" rows="5" cols="80" placeholder="Enter Your Comments"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="8" align="right"><label for=""><input type="button" value="Add Comments" style=" background-color: rgb(138, 156, 227); color:white;"></label></td>
+                        </tr>
+                        <tr align="right">
+                            <td colspan="6"><label for="action">Action</label></td>
+                            <td><input type="text" name="action" id="action"></td>
+                            <td><button style=" background-color: rgb(138, 156, 227); color:white;">Save</button></td>
+                        </tr>
+                    
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

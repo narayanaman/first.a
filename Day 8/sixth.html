@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Spread Operator.
+        const user ={
+            name:"Shubham",
+            role:"Application Developer"
+        };
+        const updatedUser={
+            ...user,
+            role:"admin",
+            city:"Gorakhpur"
+        };
+        console.log(updatedUser);
+        updatedUser.name="Shubham Vishwakarma";
+        console.log(updatedUser);
+
+        const {name,role,city}=user;// if we take the variable ius let or var so we can perform easily change. 
+        console.log(name);
+        // name="xyz";//got error.
+        console.log(name);
+        console.log(user.name);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students=["Aman","Hariom","Shubham","aayush","Anubhav","Aashutosh"];
+        console.log(students.length);
+        //to the add a data in array end use push
+        students.push("Krishna");
+        console.log(students.length);
+
+        console.log(students);
+        // to the delete a data in a array end use pop
+        students.pop();
+        console.log(students);
+
+        for(i=0; i<students.length;i++){
+            console.log(students[i]);
+        }
+        // unshift => push
+        // to the add a data in a array use unshift
+        // shift  => pop()
+        // to the delete a data in a array front use shift
+
+        students.unshift("Raghav");
+        console.log(students);
+        students.shift();
+        console.log(students);
+
+        for(let i=0;i<students.length;i++){
+
+            console.log("index is ",i + " - " + students[i]);
+        }
+    </script>
+</body>
+</html>

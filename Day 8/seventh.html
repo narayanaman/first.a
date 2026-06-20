@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seventh - Page</title>
+</head>
+<body>
+    <script>
+        let user={
+            name:"HariOM",
+            course:"BCA",
+            rollno:22,
+            city:"Deoria",
+            height:5.9,
+            weight:55,
+            isHavingGF:false,
+            gender:"Male",
+            Hobbies:["Write Poetry","Hard Working","Quick Leaner","Coding"],
+            age:19,
+            Marital_status:"Single"
+        };
+
+        let keys=Object.keys(user);
+        console.log(keys);
+        let values=Object.values(user);
+        console.log(values);
+        let entries=Object.entries(user);
+        console.log(entries);
+        //if want to search for any key in the object attribute.
+        // console.log(keys.includes("name"));
+        console.log("Name user mei hai ya nahi ?"+user.hasOwnProperty("name"));
+        console.log("rollno user mei hai ya nahi ?"+user.hasOwnProperty("rollno"));
+        
+
+
+        //to print all the keys.
+
+        Object.keys(user).forEach(element=>{
+            console.log(element)
+        });
+
+        //To print all the key value pair.
+
+        Object.entries(user).forEach((element)=>
+    {
+        console.log(element[0]+" - "+element[1]);
+    });
+
+    </script>
+</body>
+</html>

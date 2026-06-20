@@ -1,0 +1,32 @@
+/* #full{
+    border: 3px solid red;
+} */
+/* Descendent Selector */
+/* div p{
+    color:blue;
+} */
+       /* ye div ke under ke sabhi and chahe kitne bhi heirarical structure rahe access kar lega */
+
+/* child selector  */
+/* ye sirf tabhi kaam aayega jab relation perform only child ho yahi make sure ki div ke under represent hona chahiye ager grand relation aayega to kaam nhi karega */
+
+/* div > p{
+    color:#09a;
+} */
+
+/* Adjacent Sibling selector  */
+/* Adjacent sibling selector ki baat ki jaye to ye sirf ek particular para ko access karega jo h1 ke just baad hogi ager ,,,  na hone ki situation aayega to wo style kaam nhi kareg. */
+
+/* h1 + p{
+ color:red;
+} */
+
+/* Genral Sibling Selector  */
+/* h1 ~ p{
+    color:red;
+} */
+
+/* General Sibling selector me ye hota hai ki h1 tage ke baad jitne bhi para aayega usko access kar lega using ~ sign. */
+
+
+

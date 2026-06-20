@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fourth - Page</title>
+</head>
+<body>
+    <script>
+        let xyz=[11,32,3,33,4,54,65,76,87,45,"Abhishek","Raju","kaju","baju","Aman"];
+        xyz[15]="hariom";
+        for(i=0; i<xyz.length;i++){
+
+            console.log(i+' => '+xyz[i]);
+        }
+        // includes => true / false  for searching an element in array
+        // indexOf => index(1,2,3...etc) / -1  for searching an element in array
+
+        console.log("Ye exist array element check karne ke liye ki hai ya Nhi ....");
+        console.log(xyz.includes("Aman"));
+
+        console.log(xyz.indexOf("Aman"));
+        console.log(xyz.lastIndexOf(3));
+        
+
+    </script>
+</body>
+</html>

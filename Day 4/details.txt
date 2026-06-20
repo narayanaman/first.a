@@ -1,0 +1,32 @@
+ p::first-letter{
+            font-size:40px
+        }
+        p::first-line{
+            color:rgb(37, 121, 255);
+        }
+
+
+            FLEX PROPERTIS USES
+
+        .box{
+            width:100px;
+            height:100px;
+            border:2px solid;
+            font-size:2rem;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .container{
+            border:5px solid red;
+            /* flex-direction:row-reverse; */
+            display:flex;
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* flex-direction: column; */
+            flex-wrap:wrap;
+            justify-content:space-between ;
+/* space-between , space-around , space-evenly */
+            height:400px;
+
+        }

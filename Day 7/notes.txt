@@ -1,0 +1,20 @@
+// unshift => push
+// shift  => pop()
+
+// includes => true / false  for searching an element in array
+// indexOf => index(1,2,3...etc) / -1  for searching an element in array
+
+let a=[1,2];
+        let b=[3,4];
+
+        // let c=a.concat(b);
+        //  rest operator like this c=[...a,...b];
+        let c=[...a,...b];  //  rest  operator 
+        console.log(c);
+        // if i use d=c that is called call by reference..
+        let d=[...c];    // call by value
+        console.log(d);
+        d[3]="Raghav";
+        d[0]="Ram";
+        console.log(d);
+        console.log(c);

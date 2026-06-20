@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slice - splice -Page</title>
+</head>
+<body>
+    <script>
+        let xyz=[11,32,3,33,4,54,65,76,87,45,"Abhishek","Raju","kaju","baju","Aman"];
+        // let separate=xyz.slice(2,-1);// 2 index se last tak .
+        // slice(starting index ,ending index)
+        //splice ( starting index , which want to delete counting index. , update(adding element) )
+        // console.log(separate);
+
+        // start fro 2nd element and remover 5 elements
+        xyz.splice(2,5);
+        console.log(xyz);
+
+        // start from 3rd index and remover just 2 elements and add 4 elements.
+        xyz.splice(3,2,"Raghav","Raju","Subham","Pankaj");
+        console.log(xyz);
+
+        //add elements from the 5th index without removing any elements.
+        xyz.splice(5,0,56);
+        console.log(xyz);
+
+        // for(let i=0; i<xyz.length; i++){
+        //     console.log(xyz[i]);
+        // }
+
+
+        // xyz.forEach((n,index)=>{
+        // console.log(xyz[index]);
+        // })
+
+
+    </script>
+</body>
+</html>
